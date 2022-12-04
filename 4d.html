@@ -1,0 +1,29 @@
+<html>
+    <head><title>Ice Cream</title></head>
+    <body bgcolor="consilk">
+        <script>
+            var c=0;
+            function fun(){
+                if(c==0){
+                    document.body.style.backgroundColor="Floralwhite";
+                    document.getElementById("id1").innerHTML="FILL THE CONE";
+                    document.getElementById("imag").src="4dimg2.jpg";
+                    document.getElementById("link").innerHTML="FILL";
+                    c=1;
+                }
+                else{
+                    document.body.style.backgroundColor="Florawhite";
+                    document.getElementById("id1").innerHTML="EAT THE CONE";
+                    document.getElementById("imag").src="4dimg1.webp";
+                    document.getElementById("link").innerHTML="EAT";
+                    c=0;
+                }
+            }
+        </script>
+        <center>
+            <h1 id="id1">EAT THE CONE</h1><br><br>
+            <img src="4dimg1.webp" alt="Reload" height="300px" width="200px" id="imag"><br>
+            <a href="javascript:fun()" id="link">EAT</a>
+        </center>
+    </body>
+</html>

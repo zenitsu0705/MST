@@ -1,0 +1,27 @@
+<html>  
+    <head><title>Movies</title></head>  
+    <body bgcolor="lavender">  
+        <h1 align="center"><i>ShopTime</i></h1>  
+        <h2>Online bookings</h2>   
+        <script bgcolor="lavender">   
+            n=window.prompt("Enter a number:");  
+            if(n<=2){   
+                tcost=n*150  
+                document.write("For n tickets,you need to pay :",tcost);  
+            }   
+            else if(n>=6)
+            {
+                document.write("Bookings are not Allowed");  
+            }   
+            else{   
+                tcost=0,j=3;
+                for(let i=1;i<=n;i++){
+                    tcost+=150-(150*(j/100));
+                    j=j+2;
+                }
+                document.write("For ",n," tickets,you need to pay : ",tcost,"instead of ",(150*n)," with discounts");  
+            }  
+        </script>  
+    </body>  
+</html>
+   

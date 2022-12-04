@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Booking Summary</title>
+        <script>
+        var b;
+        function discount(){
+            if(a<=2){
+                document.write("No Discount<br>");
+                document.write("total price is: Rs."+(a*150)+"<br>");
+            }
+            else if(a>=6){
+                document.write("invalid no of tickets booked <br> Book tickects in b/w 1 to 6");
+            }
+            else{
+                if(a==3){
+                    b=(150*(3/100))+(150*(5/100))+(150*(7/100));
+                }
+                else if(a==4){
+                    b=(150*(3/100))+(150*(5/100))+(150*(7/100))+(150*(9/100));
+                }
+                else if(a==5){
+                    b=(150*(3/100))+(150*(5/100))+(150*(7/100))+(150*(9/100))+(150*(11/100));
+                }
+                document.write("Discount is: Rs."+b+"<br>");
+                document.write("total price is: Rs."+(a*150)+"<br>");
+                document.write("offer price is:Rs."+((a*150)-b)+"<br>");
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <center><div><h2>Booking Summary</h2></div>
+            <div>
+                <script>
+                    var a;
+                    function nooftickets(){
+                        a=prompt("enter no of tickets");
+                        document.write("no of tickets booked are:"+a+"<br>");
+                    }
+                    nooftickets();
+                </script>
+                <input type = "button" onclick = "discount()" value = "Click Me">
+            </div>
+        </center>
+    </body>
+</html>
